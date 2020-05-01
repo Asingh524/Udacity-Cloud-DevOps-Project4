@@ -1,1 +1,11 @@
-<paste log output from Kubernetes-mediated prediction, here>
+hp@DESKTOP-E16C485 MINGW64:~/Documents/projects/UdacityDevOps/Project4/submission$ ./run_kubernetes.sh
+NAME                                   READY   STATUS    RESTARTS   AGE
+udacity-p4-4b7a45fc6fw6-ggder          1/1     Running   0          50s
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
