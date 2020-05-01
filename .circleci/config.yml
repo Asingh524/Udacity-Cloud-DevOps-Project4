@@ -13,17 +13,15 @@ jobs:
 
     steps:
       - checkout
-     post:
-         - pip install -U pip setuptools virtualenv
-          
       # Download and cache dependencies
-  - restore_cache:
-       keys:
+      
+     - restore_cache:
+        keys:
           - v1-dependencies-{{ checksum "requirements.txt" }}
            # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-    - run:
+     - run:
           name: install dependencies
           command: |
             python3 -m venv venv
